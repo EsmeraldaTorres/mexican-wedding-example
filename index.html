@@ -1,0 +1,1330 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- boostrap -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- carousel2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>José Manuel & Ana María</title>
+  </head>
+  <body class="avoiding-scroll w-100">
+    <!-- Sobre -->
+    <div
+      class="bg-dark-black d-flex justify-content-center align-items-center test-class"
+      id="parent-div"
+    >
+      <div id="hoja-principal" class="sobre">
+        <div class="text-white text-center dark-mode-btn" id="darkModeToggle">
+          <img
+            id="img-light-mode"
+            src="./assets/img/Diseño sin título.png"
+            alt=""
+            class="m-w-20"
+          />
+          <img
+            id="img-dark-mode"
+            src="./assets/img/flor.png"
+            alt=""
+            class="m-w-20 d-none"
+          />
+        </div>
+        <img
+          loading="lazy"
+          id="sobre-arriba"
+          src="./assets/img/sobrearriba.png"
+          class="animate__animated p-0 m-0 z-index-3"
+          alt="sobre-arriba"
+        />
+        <img
+          id="sobre-abajo"
+          loading="lazy"
+          class="p-0 m-0 z-index-2 animate__animated"
+          src="./assets/img/sobreabajo.png"
+          alt="sobre-abajo"
+        />
+        <button id="btn-open" class="btn-open" onclick="abrir()">
+          <img
+            id="logo"
+            loading="lazy"
+            src="./assets/img/logo-jd-c.png"
+            class="animate__animated animate__pulse animate__infinite text-center"
+            alt="logo"
+          />
+        </button>
+      </div>
+    </div>
+    <!-- Invitacion -->
+    <div id="invitacion" class="invitacion hide">
+      <section class="home d-flex justify-content-center align-items-center">
+        <div
+          class="d-flex justify-content-center align-name h-100 w-100 align-items-end pb-5rem"
+        >
+          <div class="pt-4 mt-4">
+            <div
+              id="name"
+              class="text-white text-center pl-2 pr-2 animate__animated font-tang font-paris display-1"
+            >
+              <h2 class="p-0 m-0 display-33">
+                <span class="font-dancing">J</span>osé Manuel
+              </h2>
+              <h2 class="p-0 m-0 display-33">&</h2>
+              <!-- <h2 class="p-0 m-0 display-33">Diana</h2> -->
+              <h2 class="p-0 m-0 display-33">Ana María</h2>
+            </div>
+          </div>
+        </div>
+        <div class="text-white text-center player-btn" id="play">
+          <i class="bi bi-pause-circle pause-btn player-icon"></i>
+          <i class="bi bi-play-circle play-btn player-icon d-none"></i>
+          <p>audio</p>
+        </div>
+        <div class="player-audio">
+          <audio
+            id="audio"
+            controls
+            autoplay
+            src="./assets/audio/mexican-music.mp3"
+          ></audio>
+        </div>
+      </section>
+      <section class="second-section dark-mode content">
+        <div
+          class="container dark-mode d-flex justify-content-center align-items-center"
+        >
+          <div class="col-10">
+            <!-- Primera animacion AOS -->
+            <div data-aos data-aos="fade-down" data-aos-duration="2000">
+              <div
+                class="pb-4 d-flex justify-content-center align-items-center"
+              >
+                <!-- <img
+                  loading="lazy"
+                  src="./assets/img/decoration-6.png"
+                  alt="linae"
+                  class="decoration"
+                /> -->
+                <img
+                  loading="lazy"
+                  src="./assets/img/Copia de mexican-line.png"
+                  alt="linae"
+                  class="decoration"
+                />
+              </div>
+              <p class="text-center display-6">
+                El día más importante de nuestras vidas ha llegado
+              </p>
+              <div
+                class="pt-2 d-flex justify-content-center align-items-center"
+              >
+                <!-- <img
+                  loading="lazy"
+                  src="./assets/img/decoration-5.png"
+                  alt="linea"
+                  class="decoration"
+                /> -->
+                <img
+                  loading="lazy"
+                  src="./assets/img/mexican-line.png"
+                  alt="linea"
+                  class="decoration"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="positon-relative">
+            <div class="d-flex justify-content-center align-items-center">
+              <div data-aos="zoom-in" data-aos-duration="3000">
+                <p class="text-white cuenta-regresiva m-0 text-center">
+                  Sábado
+                </p>
+                <p class="text-white text-center font-paris display-4">
+                  3 <span>de</span> Noviembre <span>de</span> 2024
+                </p>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
+              <p id="demo" class="cuenta-regresiva m-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="container3 dark-mode">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="pt-4">
+              <p
+                class="title2 pt-4 mb-0 text-center font-paris"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+              >
+                Nuestra Boda
+              </p>
+              <div
+                class="pb-2 d-flex justify-content-center align-items-center"
+              >
+                <!-- <img
+                  loading="lazy"
+                  src="./assets/img/decoration-1.png"
+                  alt="linea"
+                  class="decoration"
+                /> -->
+                <img
+                  loading="lazy"
+                  src="./assets/img/mexican-line3.png"
+                  alt="linea"
+                  class="decoration"
+                />
+              </div>
+              <div class="text-center">
+                <p
+                  class="pr-4 pl-4 display-6 mx-4 mt-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  “Y ahora permanecen la fe, la esperanza y el amor, estos tres;
+                  pero el mayor de ellos es el AMOR” 1a Corintios 13:13
+                </p>
+                <p
+                  class="pr-4 pl-4 display-6 mx-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Queridos amigos y familiares,
+                </p>
+                <p
+                  class="pr-4 pl-4 display-6 mx-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Nos llena de alegría y emoción invitarlos a celebrar nuestro
+                  amor y unión. Después de un hermoso tiempo, hemos decidido dar
+                  el siguiente paso hacia el futuro juntos.
+                </p>
+                <div
+                  class="pt-2 pb-4 d-flex justify-content-center align-items-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2500"
+                >
+                  <!-- <img
+                    loading="lazy"
+                    src="./assets/img/decoration-3.png"
+                    alt="linea"
+                    class="decoration w-100"
+                  /> -->
+                  <img
+                    loading="lazy"
+                    src="./assets/img/mexican-line-5.png"
+                    alt="linea"
+                    class="decoration w-100"
+                  />
+                </div>
+                <p
+                  class="pr-4 pl-4 display-6 mx-4"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  Por favor, únanse a nosotros para celebrar el inicio de un
+                  nuevo capítulo en nuestras vidas y para brindar por nuestra
+                  felicidad y amor eterno.
+                </p>
+                <div
+                  class="pt-3 mb-4 pb-3 d-flex justify-content-center align-items-center"
+                >
+                  <!-- <img
+                    loading="lazy"
+                    src="./assets/img/decoration-1.png"
+                    alt="linea"
+                    class="decoration"
+                  /> -->
+                  <img
+                    loading="lazy"
+                    src="./assets/img/Copia de mexican-line3.png"
+                    alt="linea"
+                    class="decoration"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pase">
+        <p class="m-0 display-6">El inicio de la familia Pérez González</p>
+      </section>
+      <section class="p-4 dark-mode">
+        <p
+          class="text-center title2 font-paris"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          Agradecemos a nuestros padres
+        </p>
+        <div class="d-flex justify-content-around align-items-center">
+          <!-- <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/decoration-5.png"
+            alt="linea"
+          /> -->
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/mexican-line.png"
+            alt="linea"
+          />
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="row">
+            <div class="col-12 col-md-6 mt-4">
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                Rogelio Cruz Hernández
+              </p>
+              <p
+                class="text-center font-gold display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+              >
+                María Antornia Herrera Jiménez
+              </p>
+            </div>
+            <div class="col-12 col-md-6 mt-4">
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                Jorge Contreras Tavera
+              </p>
+              <p
+                class="text-center display-6"
+                data-aos="flip-down"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                Ana Cruz Juárez
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container3 d-flex bg-gold py-4 m-0 w-100 align-items-center justify-content-around dark-mode"
+      >
+        <div class="flower-decoration pl-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+        <div class="d-flex justify-content-center w-70">
+          <p class="text-center text-white display-6 m-0 p-2">
+            Compartir estos momentos con ustedes, los hace inolvidables.
+          </p>
+        </div>
+        <div class="flower-decoration pr-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="p-4 dark-mode">
+        <div class="w-100">
+          <p
+            class="text-center mt-4 title2 font-paris"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            Nuestros padrinos
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="owl-container">
+            <div
+              class="owl-carousel owl-theme"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Anillos</p>
+                  <p class="card-text text-center display-6">
+                    Aarón Gómez Herrera
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Alejandra Córdoba Vásquez
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Talid</p>
+                  <p class="card-text text-center display-6">
+                    José Eduardo Salcido Tovar
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Maria Antonia Morales Rodriguez
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Biblia</p>
+                  <p class="card-text text-center display-6">
+                    Eliza Torres Caballero
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Josué Jiménez Castañón
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Trigo y Miel</p>
+                  <p class="card-text text-center display-6">
+                    Daniel Cruz Herrera
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Arlette Cruz Herrera
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex p-3 justify-content-center align-items-center">
+                <div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      loading="lazy"
+                      class="icon-img"
+                      src="./assets/img/lazo.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p class="card-text text-center">Velas</p>
+                  <p class="card-text text-center display-6">
+                    Ricardo Rodriguez Lozano
+                  </p>
+                  <p class="card-text text-center display-6">
+                    Patricia Velázquez Ferrer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex pt-4 justify-content-around align-items-center">
+          <!-- <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/decoration-5.png"
+            alt="linea"
+          /> -->
+          <img
+            loading="lazy"
+            class="decoration"
+            src="./assets/img/mexican-line3.png"
+            alt="linea"
+          />
+        </div>
+      </section>
+      <section class="container3 bg-gold p-4 m-0">
+        <div class="d-flex justify-content-center">
+          <p class="w-50 text-center text-white m-0 p-2 display-6">
+            ¡Nos gustaría mucho que nos acompañaras!
+          </p>
+        </div>
+      </section>
+      <section class="itinerario">
+        <p class="text-center display-4 font-paris text-white m-0 pt-4">
+          Itinerario
+        </p>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-70">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__pulse animate__repeat-2 animate_slower"
+                      src="./assets/img/iglesia.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Ceremonia Religiosa
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5 mb-4"
+                  >
+                    4:00pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-70">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__rotateInDownLeft"
+                      src="./assets/img/camera.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Sesión de Fotos (solo familia)
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5 mb-4"
+                  >
+                    4:00pm - 6:00pm
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="carousel-item">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-70">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__rotateInDownLeft"
+                      src="./assets/img/Recepcion (1).png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Recepción
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5 mb-4"
+                  >
+                    6:00pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-70">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__rotateInDownLeft"
+                      src="./assets/img/comida.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Comida
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5 mb-4"
+                  >
+                    7:30pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div class="w-70">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      loading="lazy"
+                      class="card-img animate__animated animate__rotateInDownLeft"
+                      src="./assets/img/fiesta.png"
+                      alt="Card image cap"
+                    />
+                  </div>
+                  <p
+                    class="card-text text-white text-center p-0 font-paris display-5"
+                  >
+                    Fiesta
+                  </p>
+                  <p
+                    class="card-text text-shadow text-white font-weight-bold text-center display-5 mb-4"
+                  >
+                    8:30pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      <section class="ubicacion pt-4 dark-mode">
+        <div>
+          <p
+            class="text-center m-0 pt-4 display-5"
+            data-aos="flip-up"
+            data-aos-duration="2000"
+          >
+            Ubicación
+          </p>
+          <div class="d-flex justify-content-center align-items-center">
+            <!-- <img class="line" src="./assets/img/decoration-2.png" alt="linea" /> -->
+            <img
+              class="line"
+              src="./assets/img/mexican-line4.png"
+              alt="linea"
+            />
+          </div>
+        </div>
+        <div class="d-flex row m-0 justify-content-center align-items-center">
+          <div
+            class="col-md-5 container-ubicaciones"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div class="card-ubicaciones">
+              <p class="text-center font-paris display-4">Finca San Pedro</p>
+              <p class="text-center display-6">4:00pm</p>
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  loading="lazy"
+                  class="img-ubicaciones"
+                  src="./assets/img/Captura de pantalla 2024-04-15 a la(s) 12.20.02.png"
+                  alt="iglesia"
+                />
+              </div>
+              <div class="d-flex">
+                <div
+                  class="pt-2 pb-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/img/decoration-4.png"
+                    alt="linea"
+                    class="decoration w-50 rotate-45"
+                  />
+                </div>
+                <p class="text-center display-6 py-3">Temixco, Morelos</p>
+                <div
+                  class="pt-2 pb-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    src="./assets/img/decoration-4.png"
+                    alt="linea"
+                    class="decoration w-50 rotate-45"
+                  />
+                </div>
+              </div>
+              <p class="text-center">Bugambilias 2 Fracc. Brisas.</p>
+              <div
+                class="d-flex align-items-center py-4 justify-content-center"
+              >
+                <a
+                  target="_blank"
+                  class="animate__animated animate__pulse animate__infinite"
+                  href="https://www.google.com/maps/place/Cantapiedra/@18.8469289,-99.2256594,17z/data=!3m1!4b1!4m6!3m5!1s0x85cdd97190b68361:0xcdb49c532277d05e!8m2!3d18.8469238!4d-99.2230845!16s%2Fg%2F11s68zv1c0?entry=ttu"
+                  ><button class="btn display-6 py-3 d-flex align-items-center">
+                    <i class="bi bi-geo-alt text-white"></i>
+                    <span
+                      class="d-flex text-white align-items-center justify-content-center p-0 m-0"
+                    >
+                      Cómo llegar
+                    </span>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container3 d-flex bg-gold py-4 m-0 w-100 align-items-center justify-content-around"
+      >
+        <div class="flower-decoration pl-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+        <div class="d-flex justify-content-center w-70">
+          <p class="text-center text-white filtro-text m-0 p-2">
+            ¡Estamos esperando con mucha emoción este día!
+          </p>
+        </div>
+        <div class="flower-decoration pr-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="window-back">
+        <div
+          class="window d-flex justify-content-center align-items-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <p
+            class="p-4 rounded bg-white text-center w-90 display-5 font-paris font-weight-light"
+          >
+            ¡Dios ha sido fiel hasta el día de hoy!
+          </p>
+        </div>
+      </section>
+      <section class="title-galery dark-mode">
+        <h2
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          class="display-4"
+        >
+          Nuestra galería
+        </h2>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          class="pt-1 d-flex justify-content-center align-items-center"
+        >
+          <!-- <img
+            loading="lazy"
+            src="./assets/img/decoration-2.png"
+            alt="linae"
+            class="decoration"
+          /> -->
+          <img
+            loading="lazy"
+            src="./assets/img/mexican-line-5.png"
+            alt="linea"
+            class="decoration w-100"
+          />
+        </div>
+      </section>
+      <section
+        class="recepcion-img animate-left d-flex justify-content-center align-items-center dark-mode"
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/pareja-4.png"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/pareja-5.png"
+            data-aos="zoom-in-down"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/pareja-6.png"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <!-- <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/img-11.jpeg"
+            data-aos="zoom-in-down"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/img-10.jpeg"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/img-4.jpeg"
+            data-aos="zoom-in-down"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+          <img
+            src="./assets/img/img-12.jpeg"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+            class="w-100"
+            alt=""
+          />
+        </div> -->
+      </section>
+      <section
+        class="p-4 dark-mode"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
+        <div class="py-4 d-flex justify-content-center align-items-center">
+          <!-- <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/decoration-6.png"
+            alt="linea"
+          /> -->
+          <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/mexican-line.png"
+            alt="linea"
+          />
+        </div>
+        <div class="py-4 d-flex justify-content-center">
+          <p class="text2 text-center">
+            ¡Que nos acompañes es lo más importante! Y sí está en tu disposición
+            realizar una muestra de cariño estaremos muy agradecidos
+          </p>
+        </div>
+        <div class="pb-4 d-flex justify-content-center align-items-center">
+          <!-- <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/decoration-5.png"
+            alt="linea"
+          /> -->
+          <img
+            loading="lazy"
+            class="line"
+            src="./assets/img/Copia de mexican-line.png"
+            alt="linea"
+          />
+        </div>
+      </section>
+      <section
+        class="window-regalos d-flex justify-content-center align-items-center"
+      >
+        <div class="w-80 h-80 d-flex justify-content-center">
+          <div
+            class="card-regalos p-4"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <p class="display-4 text-center pt-4 font-paris">Mesa de Regalos</p>
+            <div class="d-flex justify-content-center">
+              <hr class="text-center" />
+            </div>
+            <div class="row d-flex justify-content-around align-items-center">
+              <div class="col-md-6">
+                <div
+                  class="d-flex pt-4 justify-content-center align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    class="logo-liverpool"
+                    src="./assets/img/LIVERPOOL-logo.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="	
+                    https://mesaderegalos.liverpool.mx/LP/51331498/Carolina-Jonathan_Daniel"
+                    class="w-80 d-flex justify-content-center"
+                    ><button
+                      class="btn btn-light display-6 text-center my-3 p-2 text-white"
+                    >
+                      Ir a mesa de regalos<i
+                        class="bi bi-box-arrow-up-right"
+                      ></i></button
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="d-flex pt-4 justify-content-center align-items-center"
+                >
+                  <img
+                    loading="lazy"
+                    class="logo-liverpool"
+                    src="./assets/img/palacio-logo.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="	
+                    https://www.elpalaciodehierro.com/buscar?eventId=386214"
+                    class="w-80 d-flex justify-content-center"
+                    ><button
+                      class="btn btn-light display-6 text-center my-3 p-2 text-white"
+                    >
+                      Ir a mesa de regalos<i
+                        class="bi bi-box-arrow-up-right"
+                      ></i></button
+                  ></a>
+                </div>
+              </div>
+              <!-- <div class="col-md-6">
+                <div class="pt-4 d-flex justify-content-center">
+                  <i class="bi bi-envelope icon-sobre"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p class="w-80 text-center display-6 text-shadow">
+                    Sobre con dinero en efectivo
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="d-flex justify-content-center py-4 align-items-center dark-mode"
+      >
+        <div class="w-80 py-4 text-center">
+          <p class="display-6" data-aos="flip-up" data-aos-duration="2000">
+            ¡Gracias por tus muestras de cariño!
+          </p>
+          <div>
+            <p class="display-6" data-aos="flip-up" data-aos-duration="2000">
+              Si así lo prefieres, también puedes hacer una transferencia
+            </p>
+
+            <div class="d-flex justify-content-center align-items-center">
+              <!-- <img class="line" src="./assets/img/decoration-2.png" alt="linea" /> -->
+              <img
+                class="line"
+                src="./assets/img/mexican-line4.png"
+                alt="linea"
+              />
+            </div>
+            <p class="display-number pt-4">4027 6653 0576 7718</p>
+            <p>Ana María</p>
+            <p>BBVA</p>
+          </div>
+        </div>
+      </section>
+      <section class="pase bg-gold p-4">
+        <p class="text-white text-center display-6">
+          Este día es muy especial y que asistas ¡lo hace aún más!
+        </p>
+      </section>
+
+      <!-- <section class="filtro-img"></section> -->
+      <section
+        class="recepcion-img2 animate-left flex-column d-flex align-items-center"
+      >
+        <!-- <p
+          class="text-white pt-4rem mt-4 text-shadow font-pari titles w-80 display-5 text-center"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          Una boda se vive 3 veces.
+        </p>
+        <p
+          class="text-white text-shadow font-pari titles w-80 display-5 text-center"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          Al soñarla, al celebrarla y al recordarla.
+        </p> -->
+        <p
+          class="text-white pt-4rem mt-4 text-shadow font-paris titles w-80 display-4 text-center"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          ¡Usa nuestro filtro en la fiesta!
+        </p>
+        <div>
+          <div class="d-flex justify-content-between w-100 p-1 flex-column">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/fbcameraeffects/tryit/1112400970011928/"
+              class="text-center text-white text-main text-shadow mt-2 linksfiltro animate__animated animate__pulse animate__infinite"
+            >
+              <i class="bi bi-facebook text-white"></i>Abrir en facebook
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/ar/1112400970011928/"
+              class="text-center text-white text-main text-shadow mt-4 linksfiltro animate__animated animate__pulse animate__infinite"
+            >
+              <i class="bi bi-instagram text-main text-white"></i>Abrir en
+              Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center p-4 padding-4 bg-vestimenta dark-mode">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          class="pt-1 d-flex justify-content-center align-items-center"
+        >
+          <!-- <img
+        loading="lazy"
+        src="./assets/img/decoration-2.png"
+        alt="linae"
+        class="decoration"
+      /> -->
+          <img
+            loading="lazy"
+            src="./assets/img/Copia de mexican-line3.png"
+            alt="linea"
+            class="decoration w-100"
+          />
+        </div>
+        <p
+          class="display-4 font-gold font-paris mt-4 mb-4 title2"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          Código de Vestimenta
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            loading="lazy"
+            class="w-80 img-vestimenta"
+            src="./assets/img/coctkail.png"
+            alt="dress-code"
+          />
+        </div>
+        <p
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          class="font-paris display-4 p-4 mb-4"
+        >
+          coctél
+        </p>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          class="pt-1 d-flex justify-content-center align-items-center"
+        >
+          <!-- <img
+          loading="lazy"
+          src="./assets/img/decoration-2.png"
+          alt="linae"
+          class="decoration"
+        /> -->
+          <img
+            loading="lazy"
+            src="./assets/img/mexican-line3.png"
+            alt="linea"
+            class="decoration w-100"
+          />
+        </div>
+      </section>
+      <section
+        class="container3 d-flex bg-gold py-4 m-0 w-100 align-items-center justify-content-around"
+      >
+        <div class="flower-decoration pl-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+        <div class="d-flex justify-content-center w-70">
+          <p class="text-center text-white display-6 m-0 p-2">
+            Este día es importante para nosotros y que vayas ¡lo hace aún más!
+          </p>
+        </div>
+        <div class="flower-decoration pr-1">
+          <img
+            src="./assets/img/decoration-8.png"
+            class="w-100 rotate-45"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="text-center p-4 dark-mode">
+        <p
+          class="display-4 font-paris mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          ¡Confirma tu asistencia!
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <p class="w-50 py-4" data-aos="fade-in" data-aos-duration="3000">
+            Por favor, danos la respuesta de tu asistencia al evento antes del
+            20 de Septiembre
+          </p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="700"
+          class="pt-1 pb-4 d-flex justify-content-center align-items-center"
+        >
+          <img
+            loading="lazy"
+            src="./assets/img/mexican-line-5.png"
+            alt="linae"
+            class="decoration"
+          />
+        </div>
+        <div class="animate__animated animate__pulse animate__infinite">
+          <a
+            href="https://wa.me/522281947721?text=¡Hola%20Carolina!%20Gracias%20por%20la%20invitación%20a%20la%20boda!.%20¡Quiero%20confirmar%20asistencia!"
+            class="animate__animated animate__pulse animate__infinite"
+            ><button class="btn p-3 display-6 text-white">
+              <i class="bi bi-check text-white"></i>Confirmar
+            </button></a
+          >
+        </div>
+        <div class="pt-3 pb-4">
+          <a
+            href="https://wa.me/522281947721?text=¡Hola%20Carolina!%20¡Gracias%20por%20la%20invitación%20a%20la%20boda!%20Lamentablemente,%20no%20podremos%20asistir."
+            ><button class="btn p-1 text-white">
+              <i class="bi bi-x text-white"></i>No podré asistir
+            </button></a
+          >
+        </div>
+      </section>
+      <section
+        class="last-window-back d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="font-paris h-100 mt-14rem display-33 flex-column d-flex justify-content-center text-dark px-4 pt-4"
+        >
+          <p
+            class="text-center pb-0 mb-0 display-33 text-white"
+            data-aos="fade-down"
+            data-aos-duration="6000"
+          >
+            ¡Te esperamos!
+          </p>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="pt-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              loading="lazy"
+              src="./assets/img/mexican-line.png"
+              alt="linae"
+              class="decoration"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="last-container">
+        <p class="text-center m-0 p-0 f-1rem">
+          Digital Invite
+          <a
+            target="_blank"
+            href="https://wa.me/524426147355?text=Hola%20Esmeralda!%20Me%20interesa%20contratar%20tu%20servicio"
+            class="marca f-1rem"
+            >by Esmeralda <i class="bi bi-whatsapp"></i
+          ></a>
+        </p>
+      </section>
+    </div>
+    <!-- Carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        nav: true,
+        slideBy: 1,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- js -->
+    <script src="./javascript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- boostrp -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
